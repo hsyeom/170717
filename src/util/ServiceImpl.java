@@ -21,7 +21,7 @@ public class ServiceImpl implements Service{
 		return list;
 	}
 	//list를 map으로 변환
-	public Map<Integer, String> converToMap(List<String> param) {
+	public Map<Integer, String> convertToMap(List<String> param) {
 		Map<Integer, String> map=new HashMap<Integer, String>();
 		for(String x:param){
 			map.put(param.indexOf(x), x);
@@ -29,7 +29,7 @@ public class ServiceImpl implements Service{
 		return map;
 	}
 	//map을 list로 변환
-	public List<String> converToList(Map<Integer, String> param) {
+	public List<String> convertToList(Map<Integer, String> param) {
 		List<String> list=new ArrayList<String>();
 		for(Map.Entry<Integer, String> entry:param.entrySet()){
 			list.add(entry.getValue());

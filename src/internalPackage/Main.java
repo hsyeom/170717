@@ -18,9 +18,9 @@ public class Main {
 		System.out.println();
 		List<String> list =service.convertToList(temp);
 		System.out.println("char배열 -> list: "+list);
-		Map<Integer,String> map=service.converToMap(list);
+		Map<Integer,String> map=service.convertToMap(list);
 		System.out.println("list -> map: "+ map);
-		System.out.println("map -> list: "+service.converToList(map));
+		System.out.println("map -> list: "+service.convertToList(map));
 		System.out.println();
 		double temp2=el.getRandomDouble();
 		System.out.println("랜덤 double 수: "+temp2);
